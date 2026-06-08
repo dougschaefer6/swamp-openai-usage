@@ -55,6 +55,6 @@ can reference them by CEL.
 
 ## Testing attestation
 
-Verified in the ASEI lab against a live OpenAI organization: `usage` and `costs`
+Verified in a production lab against a live OpenAI organization: `usage` and `costs`
 return month-to-date token totals and USD spend with correct daily buckets, and
 both fail with a clear, actionable error when handed a non-admin key.

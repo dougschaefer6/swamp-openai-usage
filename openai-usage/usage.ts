@@ -105,7 +105,7 @@ async function fetchAllBuckets(
 /** Model definition for the `@dougschaefer/openai-usage` type. */
 export const model = {
   type: "@dougschaefer/openai-usage",
-  version: "2026.05.27.1",
+  version: "2026.06.08.1",
   globalArguments: GlobalArgsSchema,
   resources: {
     "usage": {
