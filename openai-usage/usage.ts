@@ -12,7 +12,7 @@
 import { z } from "npm:zod@4.3.6";
 
 const GlobalArgsSchema = z.object({
-  apiKey: z.string().describe(
+  apiKey: z.string().meta({ sensitive: true }).describe(
     "OpenAI Admin API key (sk-admin-...) carrying the api.usage.read scope. Store it in a vault and pass via a CEL expression; a standard project key cannot read usage.",
   ),
 });
@@ -105,7 +105,7 @@ async function fetchAllBuckets(
 /** Model definition for the `@dougschaefer/openai-usage` type. */
 export const model = {
   type: "@dougschaefer/openai-usage",
-  version: "2026.06.08.1",
+  version: "2026.06.29.1",
   globalArguments: GlobalArgsSchema,
   resources: {
     "usage": {
