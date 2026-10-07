@@ -1,7 +1,7 @@
 manifestVersion: 1
 name: "@dougschaefer/openai-usage"
-version: "2026.06.29.1"
-description: "OpenAI platform usage and cost reporting via the Organization Usage API — daily and total completion token counts and USD spend, month-to-date by default. Vault-based Admin API key (the api.usage.read scope is required; a standard project key cannot read usage)."
+version: "2026.10.07.2"
+description: "OpenAI platform usage and cost reporting via the Organization Usage API — daily and total completion token counts, embeddings/moderations/images/audio usage, and USD spend, month-to-date by default, optionally grouped and filtered by project, model, API key, or cost line item. Vault-based Admin API key (the api.usage.read scope is required; a standard project key cannot read usage)."
 repository: https://github.com/dougschaefer6/swamp-openai-usage
 additionalFiles:
   - README.md
